@@ -6,7 +6,6 @@ class Liblipgloss < Formula
   license "MIT"
 
   depends_on "go" => :build
-  depends_on "clang" => :build
 
   def install
     ENV["CGO_CFLAGS"] = "-I#{include}"
